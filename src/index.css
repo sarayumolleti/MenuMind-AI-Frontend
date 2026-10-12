@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --bg-main: #FDFBF7;
+  --bg-card: #FFFFFF;
+  --bg-alt: #F7F3EB;
+  --border-color: #EAE3D2;
+  --border-focus: #C4A482;
+
+  --primary-dark: #2C1810;
+  --primary-brown: #4A2E1B;
+  --text-main: #2C1810;
+  --text-muted: #725F54;
+  --text-light: #9C897E;
+
+  --accent-gold: #C28E52;
+  --accent-gold-light: #FBF4EA;
+  --accent-green: #2E6F40;
+  --accent-green-light: #EDF7F0;
+  --accent-green-border: #A3D9B1;
+
+  --status-red: #A33B32;
+  --status-red-light: #FBEBEA;
+  --status-amber: #B46C1E;
+  --status-amber-light: #FEF6EC;
+  --status-blue: #2B5C8F;
+  --status-blue-light: #EDF4FA;
+
+  --shadow-sm: 0 1px 3px rgba(44, 24, 16, 0.05), 0 1px 2px rgba(44, 24, 16, 0.04);
+  --shadow-md: 0 4px 12px rgba(44, 24, 16, 0.06), 0 2px 4px rgba(44, 24, 16, 0.04);
+  --shadow-lg: 0 10px 24px rgba(44, 24, 16, 0.08), 0 4px 8px rgba(44, 24, 16, 0.04);
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+button {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input, select, textarea {
+  font-family: var(--font-sans);
+  color: var(--text-main);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-alt);
+}
+::-webkit-scrollbar-thumb {
+  background: #D9CEBE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4A482;
+}
