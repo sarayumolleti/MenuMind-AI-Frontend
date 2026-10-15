@@ -22,7 +22,7 @@ export default function ManagerDashboard() {
       setInsights(mlRes.data.data || []);
     }).catch(err => {
       console.error(err);
-      setError(err.response?.data?.message || err.message || 'Unable to connect to backend server at http://localhost:8080');
+      setError(err.response?.data?.message || err.message || 'Unable to connect to backend server. Please verify the service is running.');
     }).finally(() => setLoading(false));
   };
 
